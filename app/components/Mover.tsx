@@ -10,8 +10,8 @@ const Mover = () => {
 
     useEffect(() => {
       const handleMouseMove = (e: MouseEvent) => {
-        const X = e.clientX - 50; // Offset for centering the div
-        const Y = e.clientY - 50;
+        const X = e.clientX - 200; // Offset for centering the div
+        const Y = e.clientY - 200;
         setMousePosition({ x: X, y: Y });
       };
   
@@ -28,9 +28,9 @@ const Mover = () => {
           y: mousePosition.y,
         }}
         transition={{
-          stiffness: 100,
-          damping: 1,
-          // duration: 0.05,
+          //stiffness: 100,
+          //damping: 1,
+          duration: 0.5,
         }}
         style={{
           boxShadow: `
@@ -43,7 +43,7 @@ const Mover = () => {
             0 0 220px 220px rgba(255, 255, 255, 0.02)
           `,
         }}
-        className="w-24 h-24 bg-white/[0.127] rounded-full fixed">
+        className="w-[400px] h-[400px] z-[1] bg-white/[0.134] rounded-full fixed">
       </motion.div>
     )
 }
