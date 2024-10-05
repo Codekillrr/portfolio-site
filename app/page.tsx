@@ -1,13 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import { useEffect, useRef } from "react";
 import { useState } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faHome, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import Mover from "./components/Mover";
 import SpringModal from "./components/Modal.jsx";
