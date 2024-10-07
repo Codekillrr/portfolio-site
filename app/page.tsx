@@ -39,7 +39,7 @@ export default function Home() {
                 and responsive software.
               </div>
 
-              <button onClick={() => setHire(true)} className="transition-all ease-in-out duration-120 font-bold font-sans hover:bg-slate-600/[0.3]  text-slate-300 border border-slate-400 bg-slate-800/30 hover:text-xl hover:mt-[1.24rem] md:hover:mr-[0.35em] text-lg m-auto md:ml-auto w-[60%] p-4 md:mr-[0.4em] mt-5 rounded-lg">
+              <button onClick={() => setHire(true)} className="transition-all ease-in-out duration-120 hover:scale-105 active:scale-95 font-bold font-sans hover:bg-slate-600/[0.3]  text-slate-300 border border-slate-400 bg-slate-800/30 hover:text-xl hover:mt-[1.24rem] md:hover:mr-[0.35em] text-lg m-auto md:ml-auto w-[60%] p-4 md:mr-[0.4em] mt-5 rounded-lg">
                 Hire Me!
               </button>
               <SpringModal isOpen={hire} setIsOpen={setHire} />
@@ -47,10 +47,10 @@ export default function Home() {
 
             <div className="sm:mt-30 mt-20 md:mr-[0.6em]">
               <ul className="flex flex-row gap-6 justify-center md:justify-end">
-                <li><button className="hover:opacity-60"><FontAwesomeIcon icon={faEnvelope} size="2x" /></button></li>
-                <li><button className="hover:opacity-60"><FontAwesomeIcon icon={faGithub} size="2x" /></button></li>
-                <li><button className="hover:opacity-60"><FontAwesomeIcon icon={faTwitter} size="2x" /></button></li>
-                <li><button className="hover:opacity-60"><FontAwesomeIcon icon={faLinkedin} size="2x" /></button></li>
+                <li><button className="hover:opacity-60 hover:scale-105"><FontAwesomeIcon icon={faEnvelope} size="2x" /></button></li>
+                <li><button className="hover:opacity-60 hover:scale-105"><FontAwesomeIcon icon={faGithub} size="2x" /></button></li>
+                <li><button className="hover:opacity-60 hover:scale-105"><FontAwesomeIcon icon={faTwitter} size="2x" /></button></li>
+                <li><button className="hover:opacity-60 hover:scale-105"><FontAwesomeIcon icon={faLinkedin} size="2x" /></button></li>
               </ul>
             </div>
           </div>
