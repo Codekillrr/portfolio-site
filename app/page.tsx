@@ -21,20 +21,20 @@ export default function Home() {
 
       <div className="z-[3] overflow-auto flex md:flex-row flex-col">
 
-        <header className="z-[4] md:fixed bg-transparent flex align-middle justify-center md:justify-end border-white pb-[12em]  p-[8em] px-[6em] md:w-[50%] h-full"> 
+        <header className="z-[4] md:fixed bg-transparent flex align-middle justify-center md:justify-end border-white pb-[12em]  p-[8em] px-[6em] w-full md:w-[50%] h-full"> 
           <div className="flex flex-col justify-between">
             <div className="flex flex-col align-middle">
-              <div className="text-4xl sm:text-5xl text-center md:text-6xl font-sans font-bold md:text-right text-slate-300 mt-10">
+              <div className="text-4xl max-[441px]:text-3xl sm:text-5xl text-center md:text-6xl font-sans font-bold md:text-right text-slate-300 mt-10">
                 Abdur Rehman
               </div>
 
-              <div className="text-center md:text-right text-2xl font-bold p-4 pl-2 pt-2">
-                <em className="bg-gradient-to-br font-sans font-bold from-[#b9bbff] to-[#6b6ffd] text-transparent bg-clip-text">
+              <div className="text-center md:text-right font-bold p-4 md:pl-2 pt-2">
+                <em className="bg-gradient-to-br text-2xl max-sm:text-xl font-sans font-bold from-[#b9bbff] to-[#6b6ffd] text-transparent bg-clip-text">
                   Software Engineer
                 </em>
               </div>
 
-              <div className="text-center md:text-right text-xl font-sans font-bold text-slate-300 p-1">
+              <div className="text-center md:text-right max-sm:text-lg text-xl font-sans font-bold text-slate-300 p-1">
                 I develop and bulid engaging, intuitive <br />
                 and responsive software.
               </div>
@@ -56,8 +56,8 @@ export default function Home() {
           </div>
         </header>
 
-        <div className="w-[55%] pointer-events-auto h-full z-[3] ml-auto mt-[11em] relative px-[7em]">
-          <div className="text-slate-300 text-lg font-bold font-sans">
+        <div className="w-[55%] max-md:w-full pointer-events-auto h-full z-[3] ml-auto mt-[11em] relative max-md:pl-[8em] max-sm:pl-[7em] max-sm:px-[5em] px-[7em] max-[441px]:px-[2em]">
+          <div className="text-slate-300 max-[441px]:text-sm text-lg font-bold font-sans">
             My software engineering career began as a junior analyst, where I
             honed my analytical and problem-solving skills. Currently, 
             I am participating in the Headstarter AI fellowship,
