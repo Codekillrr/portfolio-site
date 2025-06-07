@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const SpringModal = ({ isOpen, setIsOpen }) => {
   return (
-    <AnimatePresence >
+    <AnimatePresence>
       {isOpen && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -22,22 +22,34 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
               <h3 className="text-3xl font-bold text-left mb-8">
                 Please fill in the details:
               </h3>
-              
-              <div className="flex justify-start gap-2 p-2 mb-4">
-                <input placeholder="First Name" className=" p-2 rounded-lg w-50 bg-slate-800/50 focus:outline-none"/>
-                <input placeholder="Last Name" className=" p-2 rounded-lg w-60 bg-slate-800/50 focus:outline-none"/>
+              <div className="flex max-[524px]:flex-col justify-start gap-2 p-2 mb-4">
+                <input
+                  placeholder="First Name"
+                  className=" p-2 rounded-lg max-w-52 bg-slate-800/50 focus:outline-none"
+                />
+                <input
+                  placeholder="Last Name"
+                  className=" p-2 rounded-lg max-w-60 bg-slate-800/50 focus:outline-none"
+                />
               </div>
-
-              <input placeholder="Email" className="ml-2 mb-6 p-2 rounded-lg w-60 bg-slate-800/50 focus:outline-none"/> <br/>
-
-              <input placeholder="Company Name" className="ml-2 mb-6 p-2 rounded-lg w-60 bg-slate-800/50 focus:outline-none"/>
-
-              <input placeholder="Job Title" className="ml-2 mb-6 p-2 rounded-lg w-50 bg-slate-800/50 focus:outline-none"/> <br />
-
-              <textarea placeholder="Job describtion and responsiblities" className="ml-2 mb-6 p-2 rounded-lg w-full min-h-[150px] resize: none bg-slate-800/50 focus:outline-none"/>
-
-
-
+              <input
+                placeholder="Email"
+                className="ml-2 mb-6 p-2 rounded-lg max-w-60 bg-slate-800/50 focus:outline-none"
+              />{" "}
+              <br />
+              <input
+                placeholder="Company Name"
+                className="ml-2 mb-6 p-2 rounded-lg max-w-60 bg-slate-800/50 focus:outline-none"
+              />
+              <input
+                placeholder="Job Title"
+                className="ml-2 mb-6 p-2 rounded-lg max-w-50 bg-slate-800/50 focus:outline-none"
+              />{" "}
+              <br />
+              <textarea
+                placeholder="Job describtion and responsiblities"
+                className="ml-2 mb-6 p-2 rounded-lg w-full min-h-[150px] resize: none bg-slate-800/50 focus:outline-none"
+              />
               <div className="flex gap-2 h-[3.5rem]">
                 <button
                   onClick={() => setIsOpen(false)}
