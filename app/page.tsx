@@ -3,11 +3,7 @@
 import { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faTwitter,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import Mover from "./components/Mover";
@@ -60,19 +56,43 @@ export default function Home() {
                   </button>
                 </li>
                 <li>
-                  <button className="hover:opacity-60 hover:scale-105">
+                  <a
+                    href="https://github.com/Codekillrr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:opacity-60 hover:scale-105"
+                  >
                     <FontAwesomeIcon icon={faGithub} size="2x" />
-                  </button>
+                  </a>
                 </li>
                 <li>
-                  <button className="hover:opacity-60 hover:scale-105">
-                    <FontAwesomeIcon icon={faTwitter} size="2x" />
-                  </button>
+                  <a
+                    href="https://bsky.app/profile/abdurr.bsky.social"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:opacity-60 hover:scale-105"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      className="bi bi-bluesky"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948" />
+                    </svg>
+                  </a>
                 </li>
                 <li>
-                  <button className="hover:opacity-60 hover:scale-105">
+                  <a
+                    href="https://www.linkedin.com/in/abdur-rehman-5ab31622b/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:opacity-60 hover:scale-105"
+                  >
                     <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                  </button>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -145,72 +165,6 @@ export default function Home() {
           </div>
 
           <Projects />
-
-          {/* <div className="my-[4em] p-4 rounded-lg bg-slate-700/[0.2] transition-all ease-in-out duration-200 hover:bg-slate-800/[0.3] backdrop-blur-3xl">
-            <h2 className="text-3xl font-bold font-sans text-sky-500 mb-4">
-              Projects
-            </h2>
-
-            <div className="flex flex-col w-full h-full">
-              <div className="flex max-sm:flex-col flex-row">
-                <div className=" flex flex-col p-4 transition-all ease-in-out duration-200 border-slate-900 max-sm:w-full w-[50%] hover:border  rounded-lg">
-                  <div className="bg-black w-full h-[160px] rounded-md"></div>
-                  <h4 className="text-xl font-sans font-bold text-[#5ba4d8] mt-4">
-                    Redis Clone
-                  </h4>
-                  <p className="text-slate-300 max-[441px]:text-sm text-lg font-bold font-sans text-left">
-                    A Redis clone built in C++, providing a high-performance,
-                    in-memory data structure store for caching and real-time
-                    applications with efficient data retrieval and storage
-                    capabilities.
-                  </p>
-                </div>
-
-                <div className="flex flex-col p-4 transition-all ease-in-out duration-200 border-slate-900 max-sm:w-full w-[50%] hover:border  rounded-lg">
-                  <div className="bg-black w-full h-[160px] rounded-md"></div>
-                  <h4 className="text-xl font-sans font-bold text-[#5ba4d8] mt-4">
-                    AI RAG Customer Support
-                  </h4>
-                  <p className="text-slate-300 max-[441px]:text-sm text-lg font-bold font-sans text-left">
-                    Used python libraries to construct charts and graphs, some
-                    of the libraries I used were, Matplotlib, Seaborn, Plotly,
-                    ggplot and Pandas.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex max-sm:flex-col flex-row">
-                <div className="flex flex-col p-4 transition-all ease-in-out duration-200 border-slate-900 max-sm:w-full w-[50%] hover:border  rounded-lg">
-                  <div className="bg-black w-full h-[160px] rounded-md"></div>
-                  <h4 className="text-xl font-sans font-bold text-[#5ba4d8] mt-4">
-                    OpenAI Inventory System
-                  </h4>
-                  <p className="text-slate-300 max-[441px]:text-sm text-lg font-bold font-sans text-left">
-                    Used python libraries to construct charts and graphs, some
-                    of the libraries I used were, Matplotlib, Seaborn, Plotly,
-                    ggplot and Pandas, to offer a range of functionalities that
-                    cater to different needs, from simple plots to interactive.
-                  </p>
-                </div>
-                <div className="flex flex-col p-4 transition-all ease-in-out duration-500 border-slate-900 max-sm:w-full w-[50%] hover:border  rounded-lg">
-                  <div className="bg-black w-full h-[160px] rounded-md"></div>
-                  <h4 className="text-xl text-left font-sans font-bold text-[#5ba4d8] mt-4">
-                    Analytical Budgeting App
-                  </h4>
-                  <p className="text-slate-300 max-[441px]:text-sm text-lg font-bold font-sans text-left">
-                    Used python libraries to construct charts and graphs, some
-                    of the libraries I used were, Matplotlib, Seaborn, Plotly,
-                    ggplot and Pandas, to offer a range of functionalities that
-                    cater to different needs.
-                  </p>
-                </div>
-              </div>
-
-              <button className="m-8 mx-auto max-sm:w-[80%] w-[40%] text-lg h-10 hover:border border-slate-900 rounded-lg transition-all ease-in-out bg-slate-700/50 hover:bg-slate-700/70 text-slate-300 font-bold font-sans">
-                View Full Portfolio
-              </button>
-            </div>
-          </div> */}
 
           <div className="my-[4em] p-4 rounded-lg bg-slate-700/[0.2] transition-all ease-in-out duration-200 hover:bg-slate-800/[0.3] backdrop-blur-3xl">
             <h2 className="text-3xl font-bold font-sans text-sky-500 mb-4">

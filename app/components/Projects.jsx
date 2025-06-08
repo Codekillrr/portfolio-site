@@ -49,10 +49,16 @@ const Projects = () => {
           </div>
         ))}
       </div>
-
-      <button className="m-8 mx-auto max-sm:w-[80%] w-[40%] text-lg h-10 hover:border border-slate-900 rounded-lg transition-all ease-in-out bg-slate-700/50 hover:bg-slate-700/70 text-slate-300 font-bold font-sans">
-        View Full Portfolio
-      </button>
+      <div className="w-full flex justify-center">
+        <a
+          href="https://github.com/Codekillrr?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="m-8 text-center mx-auto max-sm:w-[80%] max-md:w-[60%] w-[40%] p-2 text-lg hover:border border-slate-900 rounded-lg transition-all ease-in-out bg-slate-700/50 hover:bg-slate-700/70 text-slate-300 font-bold font-sans"
+        >
+          View Full Portfolio
+        </a>
+      </div>
     </div>
   );
 };
