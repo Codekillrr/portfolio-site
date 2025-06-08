@@ -5,24 +5,28 @@ const Projects = () => {
     {
       id: 1,
       img: "",
+      link: "https://github.com/Codekillrr/Redis-cpp",
       title: "Redis Clone",
       dis: "A Redis clone built in C++, providing a high-performance, in-memory data structure store for caching and real-time applications with efficient data retrieval and storage capabilities.",
     },
     {
       id: 2,
       img: "",
+      link: "https://github.com/Codekillrr/ai-rag-customer-support",
       title: "AI RAG Customer Support",
       dis: "Used python libraries to construct charts and graphs, some of the libraries I used were, Matplotlib, Seaborn, Plotly, ggplot and Pandas.",
     },
     {
       id: 3,
       img: "",
+      link: "https://github.com/Codekillrr/pantry-app",
       title: "OpenAI Inventory System",
       dis: "Used python libraries to construct charts and graphs, some of the libraries I used were, Matplotlib, Seaborn, Plotly, ggplot and Pandas, to offer a range of functionalities that cater to different needs, from simple plots to interactive.",
     },
     {
       id: 4,
       img: "",
+      link: "https://github.com/Codekillrr/Ravin-ecom",
       title: "Analytical Budgeting App",
       dis: "Used python libraries to construct charts and graphs, some of the libraries I used were, Matplotlib, Seaborn, Plotly, ggplot and Pandas, to offer a range of functionalities that cater to different needs.",
     },
@@ -35,8 +39,11 @@ const Projects = () => {
 
       <div className="grid grid-flow-row grid-cols-2 max-[1190px]:grid-cols-1 gap-0">
         {projects.map((project) => (
-          <div
+          <a
             key={project.id}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
             className=" flex flex-col p-4 transition-all ease-in-out duration-200 ring-slate-900 hover:ring-1 rounded-lg"
           >
             <div className="bg-black w-full max-md:w-[70%] max-sm:w-full h-[160px] rounded-md"></div>
@@ -46,7 +53,7 @@ const Projects = () => {
             <p className="text-slate-300 max-[441px]:text-sm text-lg font-bold font-sans text-left">
               {project.dis}
             </p>
-          </div>
+          </a>
         ))}
       </div>
       <div className="w-full flex justify-center">
