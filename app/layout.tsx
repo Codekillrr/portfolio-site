@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,7 +17,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Abdur Rehman",
-  description: "Welcome to my personal website, where I showcase my skills, experience, and expertise. Feel free to explore my portfolio, and don’t hesitate to reach out for collaboration or to hire me directly through this platform.",
+  description:
+    "Welcome to my personal website, where I showcase my skills, experience, and expertise. Feel free to explore my portfolio, and don’t hesitate to reach out for collaboration or to hire me directly through this platform.",
 };
 
 export default function RootLayout({
